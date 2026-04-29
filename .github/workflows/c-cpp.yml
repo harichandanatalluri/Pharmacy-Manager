@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install G++ Compiler
+      run: sudo apt-get install -y g++
+
+    - name: Compile Pharmacy Management System
+      run: g++ pharmacy_management.cpp -o pharmacy
+
+    - name: Build Successful
+      run: echo "✅ Pharmacy Management System compiled successfully!"
