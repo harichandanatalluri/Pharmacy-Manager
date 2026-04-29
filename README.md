@@ -1,7 +1,3 @@
-# Pharmacy-Manager
-Repository for https://replit.com/@haritalluri/Pharmacy-Manager
-
-
 # 💊 Pharmacy Management System
 
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=cplusplus)
